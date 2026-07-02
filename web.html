@@ -1,0 +1,394 @@
+<!-- ============================================
+     PROTOCOLHUB — PREMIUM LANDING PAGE
+     Structure: Nav, Hero, Protocol Cards, Comparison, FAQ, Footer
+     ============================================ -->
+<div class="noise-overlay"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ===== NAVIGATION ===== -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#" class="logo">
+      <span class="logo-icon">◆</span>
+      <span class="logo-text">Protocol<span class="accent">Hub</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#protocols">Protocols</a>
+      <a href="#compare">Compare</a>
+      <a href="#faq">FAQ</a>
+      <a href="#footer">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="btn btn-ghost" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon">🌙</span>
+      </button>
+      <button class="btn btn-primary">Launch App</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <div class="grid-lines"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <div class="container hero-inner">
+    <div class="hero-badge reveal">
+      <span class="pulse-dot"></span>
+      Trusted by 40,000+ builders worldwide
+    </div>
+
+    <h1 class="hero-title reveal">
+      The Future of
+      <span class="gradient-text">Decentralized</span>
+      Protocols Starts Here
+    </h1>
+
+    <p class="hero-subtitle reveal">
+      Compare, analyze, and integrate the most secure and scalable protocols
+      in one unified, beautifully designed dashboard.
+    </p>
+
+    <div class="hero-cta reveal">
+      <button class="btn btn-primary btn-lg" id="getStartedBtn">
+        Get Started Free
+        <span class="btn-arrow">→</span>
+      </button>
+      <button class="btn btn-outline btn-lg">
+        <span class="play-icon">▶</span>
+        Watch Demo
+      </button>
+    </div>
+
+    <div class="hero-stats reveal">
+      <div class="stat">
+        <h3 class="counter" data-target="120">0</h3>
+        <p>Protocols Indexed</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <h3 class="counter" data-target="98">0</h3>
+        <p>% Uptime Reliability</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <h3 class="counter" data-target="2400">0</h3>
+        <p>Integrations Built</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Scroll to explore</span>
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+  </div>
+</section>
+
+<!-- ===== PROTOCOL CARDS SECTION ===== -->
+<section class="protocols" id="protocols">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Explore</span>
+      <h2>Featured Protocols</h2>
+      <p>Hand-picked, audited, and battle-tested across the ecosystem.</p>
+    </div>
+
+    <div class="protocol-grid">
+      <div class="protocol-card reveal" data-tilt>
+        <div class="card-glow"></div>
+        <div class="card-icon-wrap">
+          <span class="card-icon">⚡</span>
+        </div>
+        <h3>NovaChain</h3>
+        <p>Ultra-fast layer 1 protocol with sub-second finality and near-zero fees.</p>
+        <div class="card-meta">
+          <span class="badge badge-green">Audited</span>
+          <span class="tps">45,000 TPS</span>
+        </div>
+        <a href="#" class="card-link">Learn more <span>→</span></a>
+      </div>
+
+      <div class="protocol-card reveal" data-tilt>
+        <div class="card-glow"></div>
+        <div class="card-icon-wrap">
+          <span class="card-icon">🛡️</span>
+        </div>
+        <h3>ShieldNet</h3>
+        <p>Security-first protocol built for enterprise-grade data integrity.</p>
+        <div class="card-meta">
+          <span class="badge badge-blue">Enterprise</span>
+          <span class="tps">12,000 TPS</span>
+        </div>
+        <a href="#" class="card-link">Learn more <span>→</span></a>
+      </div>
+
+      <div class="protocol-card reveal" data-tilt>
+        <div class="card-glow"></div>
+        <div class="card-icon-wrap">
+          <span class="card-icon">🔗</span>
+        </div>
+        <h3>LinkFabric</h3>
+        <p>Interoperability protocol connecting chains with trustless bridges.</p>
+        <div class="card-meta">
+          <span class="badge badge-purple">Cross-chain</span>
+          <span class="tps">28,500 TPS</span>
+        </div>
+        <a href="#" class="card-link">Learn more <span>→</span></a>
+      </div>
+
+      <div class="protocol-card reveal" data-tilt>
+        <div class="card-glow"></div>
+        <div class="card-icon-wrap">
+          <span class="card-icon">🌐</span>
+        </div>
+        <h3>MeshCore</h3>
+        <p>Decentralized mesh architecture designed for global scalability.</p>
+        <div class="card-meta">
+          <span class="badge badge-orange">Scalable</span>
+          <span class="tps">31,200 TPS</span>
+        </div>
+        <a href="#" class="card-link">Learn more <span>→</span></a>
+      </div>
+
+      <div class="protocol-card reveal" data-tilt>
+        <div class="card-glow"></div>
+        <div class="card-icon-wrap">
+          <span class="card-icon">💎</span>
+        </div>
+        <h3>CrystalLedger</h3>
+        <p>Transparent ledger protocol with zero-knowledge privacy layers.</p>
+        <div class="card-meta">
+          <span class="badge badge-green">Audited</span>
+          <span class="tps">19,800 TPS</span>
+        </div>
+        <a href="#" class="card-link">Learn more <span>→</span></a>
+      </div>
+
+      <div class="protocol-card reveal" data-tilt>
+        <div class="card-glow"></div>
+        <div class="card-icon-wrap">
+          <span class="card-icon">🚀</span>
+        </div>
+        <h3>OrbitScale</h3>
+        <p>Modular protocol enabling infinite horizontal scalability.</p>
+        <div class="card-meta">
+          <span class="badge badge-blue">Modular</span>
+          <span class="tps">52,000 TPS</span>
+        </div>
+        <a href="#" class="card-link">Learn more <span>→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMPARISON SECTION ===== -->
+<section class="comparison" id="compare">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Compare</span>
+      <h2>Why Builders Choose ProtocolHub</h2>
+      <p>See how we stack up against traditional protocol explorers.</p>
+    </div>
+
+    <div class="compare-table-wrap reveal">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th class="feature-col">Features</th>
+            <th class="highlight-col">
+              <span class="table-logo">◆ ProtocolHub</span>
+            </th>
+            <th>Legacy Explorer</th>
+            <th>Basic Dashboard</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Real-time Analytics</td>
+            <td class="highlight-col"><span class="check yes">✓</span></td>
+            <td><span class="check no">✕</span></td>
+            <td><span class="check partial">~</span></td>
+          </tr>
+          <tr>
+            <td>Cross-chain Support</td>
+            <td class="highlight-col"><span class="check yes">✓</span></td>
+            <td><span class="check partial">~</span></td>
+            <td><span class="check no">✕</span></td>
+          </tr>
+          <tr>
+            <td>Security Audits Included</td>
+            <td class="highlight-col"><span class="check yes">✓</span></td>
+            <td><span class="check no">✕</span></td>
+            <td><span class="check no">✕</span></td>
+          </tr>
+          <tr>
+            <td>Custom API Access</td>
+            <td class="highlight-col"><span class="check yes">✓</span></td>
+            <td><span class="check yes">✓</span></td>
+            <td><span class="check no">✕</span></td>
+          </tr>
+          <tr>
+            <td>24/7 Priority Support</td>
+            <td class="highlight-col"><span class="check yes">✓</span></td>
+            <td><span class="check no">✕</span></td>
+            <td><span class="check partial">~</span></td>
+          </tr>
+          <tr>
+            <td>Free Tier Available</td>
+            <td class="highlight-col"><span class="check yes">✓</span></td>
+            <td><span class="check yes">✓</span></td>
+            <td><span class="check yes">✓</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ SECTION ===== -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">FAQ</span>
+      <h2>Frequently Asked Questions</h2>
+      <p>Everything you need to know before getting started.</p>
+    </div>
+
+    <div class="faq-list reveal">
+      <div class="faq-item active">
+        <button class="faq-question">
+          <span>What is ProtocolHub?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>ProtocolHub is a unified dashboard that lets you discover, compare, and integrate decentralized protocols with real-time analytics and audited security data — all in one place.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Is ProtocolHub free to use?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes! We offer a generous free tier that includes access to core analytics, protocol comparisons, and community support. Premium plans unlock advanced API access and priority support.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>How often is protocol data updated?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Our indexing engine refreshes protocol data in real-time, pulling directly from on-chain sources to ensure you always see the most current metrics available.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Can I integrate ProtocolHub into my own app?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely. Our REST and WebSocket APIs make it simple to pull protocol data, comparison metrics, and analytics directly into your own applications.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Do you audit every listed protocol?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>We partner with third-party security firms to audit featured protocols, and we clearly label audit status so you can make informed decisions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BANNER ===== -->
+<section class="cta-banner">
+  <div class="container cta-inner reveal">
+    <h2>Ready to build on the best protocols?</h2>
+    <p>Join thousands of developers already using ProtocolHub.</p>
+    <button class="btn btn-primary btn-lg">
+      Start Building Now
+      <span class="btn-arrow">→</span>
+    </button>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" id="footer">
+  <div class="container footer-inner">
+    <div class="footer-col footer-brand">
+      <a href="#" class="logo">
+        <span class="logo-icon">◆</span>
+        <span class="logo-text">Protocol<span class="accent">Hub</span></span>
+      </a>
+      <p>Building the infrastructure layer for the decentralized future.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Twitter">𝕏</a>
+        <a href="#" aria-label="Discord">◐</a>
+        <a href="#" aria-label="GitHub">⌥</a>
+        <a href="#" aria-label="Telegram">✈</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="#protocols">Protocols</a>
+      <a href="#compare">Comparison</a>
+      <a href="#">Pricing</a>
+      <a href="#">Changelog</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="#">Documentation</a>
+      <a href="#">API Reference</a>
+      <a href="#faq">FAQ</a>
+      <a href="#">Blog</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#">About</a>
+      <a href="#">Careers</a>
+      <a href="#">Contact</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+
+    <div class="footer-col footer-newsletter">
+      <h4>Stay Updated</h4>
+      <p>Get the latest protocol news in your inbox.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">→</button>
+      </form>
+      <p class="form-message" id="formMessage"></p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 ProtocolHub. All rights reserved.</p>
+    <div class="footer-legal">
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+      <a href="#">Cookies</a>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
