@@ -1,0 +1,451 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Hub — The Right AI for Every Task</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#" class="logo">
+      <span class="logo-icon">◆</span>
+      <span class="logo-text">AI<span class="accent">Hub</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#protocols">Protocols</a>
+      <a href="#secure">Secure vs Not</a>
+      <a href="#compare">Compare</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="btn btn-primary" id="exploreBtn">Explore Protocols</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <div class="grid-lines"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+  </div>
+
+  <div class="container hero-inner">
+    <div class="hero-badge reveal">
+      <span class="pulse-dot"></span>
+      Understand the internet's core protocols
+    </div>
+
+    <h1 class="hero-title reveal">
+      AI Hub: The Right
+      <span class="gradient-text">AI</span> for Every Task
+    </h1>
+
+    <p class="hero-subtitle reveal">
+      Before any AI, app, or website can talk to the world, it relies on
+      the same foundational protocols. Explore HTTP, HTTPS, FTP, SMTP,
+      POP3, IMAP, and DNS — explained simply, visually, beautifully.
+    </p>
+
+    <div class="hero-cta reveal">
+      <button class="btn btn-primary btn-lg" id="scrollToProtocols">
+        Explore Protocols
+        <span class="btn-arrow">→</span>
+      </button>
+      <button class="btn btn-outline btn-lg" id="scrollToCompare">
+        Compare Them
+      </button>
+    </div>
+
+    <div class="hero-stats reveal">
+      <div class="stat">
+        <h3 class="counter" data-target="7">0</h3>
+        <p>Core Protocols</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <h3 class="counter" data-target="60">0</h3>
+        <p>Years Powering the Web</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <h3 class="counter" data-target="100">0</h3>
+        <p>% Free to Learn</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Scroll to explore</span>
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+  </div>
+</section>
+
+<!-- ===== PROTOCOL CARDS ===== -->
+<section class="protocols" id="protocols">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Core Protocols</span>
+      <h2>The Languages of the Internet</h2>
+      <p>Every request, email, and file transfer depends on one of these.</p>
+    </div>
+
+    <div class="protocol-grid">
+
+      <div class="protocol-card reveal" data-tilt data-modal="http">
+        <div class="card-glow"></div>
+        <div class="card-icon-wrap"><span class="card-icon">🌐</span></div>
+        <h3>HTTP</h3>
+        <p>HyperText Transfer Protocol — the foundation of data exchange on the web.</p>
+        <div class="card-meta">
+          <span class="badge badge-orange">Port 80</span>
+          <span class="tps">Unencrypted</span>
+        </div>
+        <a href="#" class="card-link">Learn more <span>→</span></a>
+      </div>
+
+      <div class="protocol-card reveal" data-tilt data-modal="https">
+        <div class="card-glow"></div>
+        <div class="card-icon-wrap"><span class="card-icon">🔒</span></div>
+        <h3>HTTPS</h3>
+        <p>The secure version of HTTP, encrypted with SSL/TLS to protect user data.</p>
+        <div class="card-meta">
+          <span class="badge badge-green">Port 443</span>
+          <span class="tps">Encrypted</span>
+        </div>
+        <a href="#" class="card-link">Learn more <span>→</span></a>
+      </div>
+
+      <div class="protocol-card reveal" data-tilt data-modal="ftp">
+        <div class="card-glow"></div>
+        <div class="card-icon-wrap"><span class="card-icon">📁</span></div>
+        <h3>FTP</h3>
+        <p>File Transfer Protocol — used to upload and download files between systems.</p>
+        <div class="card-meta">
+          <span class="badge badge-orange">Port 21</span>
+          <span class="tps">File Transfer</span>
+        </div>
+        <a href="#" class="card-link">Learn more <span>→</span></a>
+      </div>
+
+      <div class="protocol-card reveal" data-tilt data-modal="smtp">
+        <div class="card-glow"></div>
+        <div class="card-icon-wrap"><span class="card-icon">📤</span></div>
+        <h3>SMTP</h3>
+        <p>Simple Mail Transfer Protocol — the standard for sending emails.</p>
+        <div class="card-meta">
+          <span class="badge badge-blue">Port 25 / 587</span>
+          <span class="tps">Sending Mail</span>
+        </div>
+        <a href="#" class="card-link">Learn more <span>→</span></a>
+      </div>
+
+      <div class="protocol-card reveal" data-tilt data-modal="pop3">
+        <div class="card-glow"></div>
+        <div class="card-icon-wrap"><span class="card-icon">📥</span></div>
+        <h3>POP3</h3>
+        <p>Post Office Protocol v3 — downloads emails from a server to one device.</p>
+        <div class="card-meta">
+          <span class="badge badge-purple">Port 110</span>
+          <span class="tps">Receiving Mail</span>
+        </div>
+        <a href="#" class="card-link">Learn more <span>→</span></a>
+      </div>
+
+      <div class="protocol-card reveal" data-tilt data-modal="imap">
+        <div class="card-glow"></div>
+        <div class="card-icon-wrap"><span class="card-icon">📧</span></div>
+        <h3>IMAP</h3>
+        <p>Internet Message Access Protocol — syncs email across multiple devices.</p>
+        <div class="card-meta">
+          <span class="badge badge-purple">Port 143</span>
+          <span class="tps">Receiving Mail</span>
+        </div>
+        <a href="#" class="card-link">Learn more <span>→</span></a>
+      </div>
+
+      <div class="protocol-card reveal" data-tilt data-modal="dns">
+        <div class="card-glow"></div>
+        <div class="card-icon-wrap"><span class="card-icon">🧭</span></div>
+        <h3>DNS</h3>
+        <p>Domain Name System — translates human-readable domains into IP addresses.</p>
+        <div class="card-meta">
+          <span class="badge badge-orange">Port 53</span>
+          <span class="tps">Name Resolution</span>
+        </div>
+        <a href="#" class="card-link">Learn more <span>→</span></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== HTTP vs HTTPS SECTION ===== -->
+<section class="secure" id="secure">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Security</span>
+      <h2>HTTP vs HTTPS</h2>
+      <p>The single "S" makes all the difference in security.</p>
+    </div>
+
+    <div class="secure-grid reveal">
+      <div class="secure-card">
+        <div class="secure-icon">🌐</div>
+        <h3>HTTP</h3>
+        <ul>
+          <li><span class="x-icon">✕</span> Data sent in plain text</li>
+          <li><span class="x-icon">✕</span> Vulnerable to interception</li>
+          <li><span class="x-icon">✕</span> No identity verification</li>
+          <li><span class="x-icon">✕</span> Flagged "Not Secure" by browsers</li>
+        </ul>
+      </div>
+
+      <div class="secure-vs">VS</div>
+
+      <div class="secure-card highlight">
+        <div class="secure-icon">🔒</div>
+        <h3>HTTPS</h3>
+        <ul>
+          <li><span class="check-icon">✓</span> Data encrypted with TLS/SSL</li>
+          <li><span class="check-icon">✓</span> Protected from eavesdropping</li>
+          <li><span class="check-icon">✓</span> Verified via SSL certificates</li>
+          <li><span class="check-icon">✓</span> Shows the padlock icon</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMPARISON TABLE ===== -->
+<section class="comparison" id="compare">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Compare</span>
+      <h2>Protocols at a Glance</h2>
+      <p>A quick side-by-side reference of every core protocol.</p>
+    </div>
+
+    <div class="compare-table-wrap reveal">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th class="feature-col">Protocol</th>
+            <th>Full Name</th>
+            <th>Default Port</th>
+            <th>Purpose</th>
+            <th>Encrypted</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="feature-col">HTTP</td>
+            <td>HyperText Transfer Protocol</td>
+            <td>80</td>
+            <td>Web page delivery</td>
+            <td><span class="check no">✕</span></td>
+          </tr>
+          <tr>
+            <td class="feature-col">HTTPS</td>
+            <td>HTTP Secure</td>
+            <td>443</td>
+            <td>Secure web page delivery</td>
+            <td><span class="check yes">✓</span></td>
+          </tr>
+          <tr>
+            <td class="feature-col">FTP</td>
+            <td>File Transfer Protocol</td>
+            <td>21</td>
+            <td>Transferring files</td>
+            <td><span class="check no">✕</span></td>
+          </tr>
+          <tr>
+            <td class="feature-col">SMTP</td>
+            <td>Simple Mail Transfer Protocol</td>
+            <td>25 / 587</td>
+            <td>Sending emails</td>
+            <td><span class="check partial">~</span></td>
+          </tr>
+          <tr>
+            <td class="feature-col">POP3</td>
+            <td>Post Office Protocol v3</td>
+            <td>110</td>
+            <td>Downloading emails</td>
+            <td><span class="check partial">~</span></td>
+          </tr>
+          <tr>
+            <td class="feature-col">IMAP</td>
+            <td>Internet Message Access Protocol</td>
+            <td>143</td>
+            <td>Syncing emails</td>
+            <td><span class="check partial">~</span></td>
+          </tr>
+          <tr>
+            <td class="feature-col">DNS</td>
+            <td>Domain Name System</td>
+            <td>53</td>
+            <td>Domain to IP resolution</td>
+            <td><span class="check no">✕</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">FAQ</span>
+      <h2>Frequently Asked Questions</h2>
+      <p>Quick answers about the internet's core protocols.</p>
+    </div>
+
+    <div class="faq-list reveal">
+      <div class="faq-item active">
+        <button class="faq-question">
+          <span>What's the difference between HTTP and HTTPS?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>HTTPS is HTTP with an added encryption layer (TLS/SSL). It scrambles data between browser and server so attackers can't read or tamper with it, and it verifies the website's identity with a certificate.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Why do we still need FTP if we have HTTP?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>FTP is optimized specifically for transferring large files or batches of files between computers, and gives more control over directory structures than HTTP file downloads typically offer.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>What's the difference between POP3 and IMAP?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>POP3 downloads emails to a single device and often removes them from the server, while IMAP keeps emails on the server and syncs them across every device you use.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Why is DNS called "the phonebook of the internet"?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>DNS translates human-friendly domain names like example.com into the numeric IP addresses computers actually use to locate each other on a network.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Does SMTP send AND receive emails?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>No — SMTP is only responsible for sending and relaying outgoing mail. Receiving and reading mail is handled by POP3 or IMAP instead.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BANNER ===== -->
+<section class="cta-banner">
+  <div class="container cta-inner reveal">
+    <h2>Ready to master how the web really works?</h2>
+    <p>Understanding these protocols is the first step to understanding everything online.</p>
+    <button class="btn btn-primary btn-lg" id="ctaScrollBtn">
+      Back to Protocols
+      <span class="btn-arrow">→</span>
+    </button>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" id="footer">
+  <div class="container footer-inner">
+    <div class="footer-col footer-brand">
+      <a href="#" class="logo">
+        <span class="logo-icon">◆</span>
+        <span class="logo-text">AI<span class="accent">Hub</span></span>
+      </a>
+      <p>Explaining the protocols that power the internet, one card at a time.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Twitter">𝕏</a>
+        <a href="#" aria-label="GitHub">⌥</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Protocols</h4>
+      <a href="#protocols">HTTP / HTTPS</a>
+      <a href="#protocols">FTP</a>
+      <a href="#protocols">SMTP / POP3 / IMAP</a>
+      <a href="#protocols">DNS</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="#secure">Secure vs Not</a>
+      <a href="#compare">Comparison Table</a>
+      <a href="#faq">FAQ</a>
+    </div>
+
+    <div class="footer-col footer-newsletter">
+      <h4>Stay Curious</h4>
+      <p>Get bite-sized networking explainers in your inbox.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">→</button>
+      </form>
+      <p class="form-message" id="formMessage"></p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 AI Hub. All rights reserved.</p>
+    <div class="footer-legal">
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== PROTOCOL DETAIL MODAL ===== -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box" id="modalBox">
+    <button class="modal-close" id="modalClose">✕</button>
+    <div class="modal-icon" id="modalIcon"></div>
+    <h3 id="modalTitle"></h3>
+    <p id="modalText"></p>
+  </div>
+</div>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
